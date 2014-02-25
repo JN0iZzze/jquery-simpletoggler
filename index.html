@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>JQuery Simple toggler!</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+    <link rel="stylesheet" href="css/normalize.min.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="css/layout.css" type="text/css" media="screen" />
+
+    <link rel="stylesheet" href="css/ui-toggle.css" type="text/css" media="screen" />
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.toggler.js"></script>
+
+
+</head>
+
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row center">
+                <h2>JQuery Simple toggler</h2>
+            </div>
+        </div>
+    </header>
+    <div class="container page">
+        <div class="row">
+            <div class="content">
+
+                <input id="checkbox1" type="checkbox" class="checkbox"/>
+
+                <br class="clear"/>
+                <br class="clear"/>
+
+                <input id="checkbox2" type="checkbox" class="checkbox"/>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="center">&copy; 2013-2014 <a href="http://ameego.ru/">JN0iZzze</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(function(){
+
+            $('#checkbox1').checkToggler({
+                labelOn:'On',
+                labelOff:'Off'
+            });
+
+            $('#checkbox2').checkToggler({
+                labelOn:'Вкл',
+                labelOff:'Выкл'
+            });
+
+        });
+    </script>
+
+</body>
+
+</html>
